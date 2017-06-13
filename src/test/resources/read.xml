@@ -6,7 +6,7 @@
     </student>
     <student id="2">
         <firstName value="Gaga"></firstName>
-        <lastName value="Alex"></lastName>
+        <lastName value="Alexandru"></lastName>
         <email value="ga@yahoo.com"> </email>
     </student>
 </students>
