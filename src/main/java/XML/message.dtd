@@ -1,0 +1,11 @@
+<!-- message.dtd file-->
+        <!DOCTYPE messages [
+        <!ELEMENT messages (message)*>
+        <!ELEMENT message (to|from|heading|body)*>
+        <!ELEMENT to (#PCDATA)>
+        <!ATTLIST to
+                username CDATA #REQUIRED>
+        <!ELEMENT from (#PCDATA)>
+        <!ELEMENT heading (#PCDATA)>
+        <!ELEMENT body (#PCDATA)>
+        ]>

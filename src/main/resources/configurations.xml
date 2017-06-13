@@ -1,0 +1,5 @@
+<beans>
+    <bean class="repository.StudenXMLStAX2Repository">
+        <property name="validator" class=""></property>
+    </bean>
+</beans>

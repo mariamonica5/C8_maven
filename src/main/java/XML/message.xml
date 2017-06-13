@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE messages SYSTEM "message.dtd"> -->
+<messages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="message2.xsd">
+    <message>
+        <to username="aprog" >Aprogramatoarei</to>
+        <from>Serban </from>
+        <heading>Reminder</heading>
+        <body>Don 	&apos;t forget to do your MAP labs </body>
+    </message>
+</messages>
+
+
+

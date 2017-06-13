@@ -1,0 +1,19 @@
+<beans>
+    <bean id="studentService" class="service.StudentService">
+        <property name="studentRepository" ref="studentRepository"/>
+        <property name="disciplineRepository" ref="disciplineRepository"/>
+        <property name="noteRepository" ref="noteRepository"/>
+    </bean>
+    <bean id="studentRepository" class="repository.StudentRepository">
+        <property name="validator" ref="studentValidator"/>
+    </bean>
+    <bean id="disciplineRepository" class="repository.DisciplineRepository">
+        <property name="validator" ref="disciplineValidator"/>
+    </bean>
+    <bean id="noteRepository" class="repository.NoteRepository">
+        <property name="validator" ref="noteValidator"/>
+    </bean>
+    <bean id="studentValidator" class="domain.StudentValidator"/>
+    <bean id="disciplineValidator" class="domain.DisciplineValidator"/>
+    <bean id="noteValidator" class="domain.NoteValidator"/>
+</beans>

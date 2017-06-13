@@ -1,0 +1,11 @@
+<students>
+    <student id="1">
+        <firstName value="Popescu1"></firstName>
+        <lastName value="Stanila1"></lastName>
+        <email value="sasa33@sasas"></email>
+    </student>
+    <student id="2">
+        <firstName value="Popescu2"></firstName><lastName value="Stanila2"></lastName><email value="sasa222@sasas"></email></student>
+    <student id="3"><firstName value="Popescu3"></firstName><lastName value="Stanila3"></lastName><email value="sasa11@sasas"></email></student>
+    <student id="52"><firstName value="andu"></firstName><lastName value="dan"></lastName><email value="djhsjdhsj@"></email></student>
+</students>

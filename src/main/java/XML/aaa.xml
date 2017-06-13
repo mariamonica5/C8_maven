@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><students>
+    <student id="1">
+        <firstName>"Popescu"</firstName>
+        <lastName>"Andrei"</lastName>
+        <email> "andrei@yahoo.com" </email>
+    </student>
+    <student id="2">
+        <firstName>"Popescu2"</firstName>
+        <lastName>"Andrei2"</lastName>
+        <email> "andrei2@yahoo.com" </email>
+    </student>
+    <student id="3">
+        <firstName>"Popescu3"</firstName>
+        <lastName>"Andrei3"</lastName>
+        <email> "andrei3@yahoo.com" </email>
+    </student>
+
+<student id="5"><id>9</id><firstName>gigi</firstName><lastName>stan</lastName><email>jhjshdj</email></student></students>

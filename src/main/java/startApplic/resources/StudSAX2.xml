@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    <student id="1">
+        <firstName value="Popescu"/>
+        <lastName value="Stanila"/>
+        <emailName value="sasa@sasas"/>
+    </student>
+
+</students>

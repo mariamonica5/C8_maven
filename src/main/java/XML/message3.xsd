@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xy:schema elementFormDefault="qualified" xmlns:xy="http://www.w3.org/2001/XMLSchema">
+    <xy:element name="messages" >
+        <xy:complexType>
+            <xy:sequence>
+                <xy:element type="messageType" name="message"/>
+            </xy:sequence>
+        </xy:complexType>
+    </xy:element>
+    <xy:complexType name="messageType">
+        <xy:sequence>
+            <xy:element type="toType" name="to"/>
+            <xy:element type="xy:string" name="from"/>
+            <xy:element type="xy:string" name="heading"/>
+            <xy:element type="xy:string" name="body"/>
+        </xy:sequence>
+    </xy:complexType>
+    <xy:complexType name="toType">
+        <xy:simpleContent>
+            <xy:extension base="xy:string">
+                <xy:attribute type="xy:string" name="username"/>
+            </xy:extension>
+        </xy:simpleContent>
+    </xy:complexType>
+</xy:schema>
