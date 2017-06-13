@@ -32,8 +32,8 @@ public class StudentXMLRepositoryTest {
 
             }
         };
-        file= new File("D:\\Licenta\\C8\\src\\test\\repository\\xmlfile.xml");
-        repo= new StudentXMLRepository(v, "D:\\Licenta\\C8\\src\\test\\repository\\xmlfile.xml");
+        file= new File("D:\\Licenta\\C8_maven\\src\\test\\resources\\xmlfile.xml");
+        repo= new StudentXMLRepository(v, "D:\\Licenta\\C8_maven\\src\\test\\resources\\xmlfile.xml");
         student1 = new Student("1", "Pop", "Vasile", "pv@yahoo.com");
         student2 = new Student("2", "Gaga", "Alex", "ga@yahoo.com");
         students= new ArrayList<Student>();
