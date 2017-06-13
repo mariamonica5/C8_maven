@@ -41,19 +41,19 @@ public class StudentXMLStAXRepositoryTest {
 
             }
         };
-        repo = new StudentXMLStAXRepository(v,"D:\\Licenta\\C8\\src\\test\\repository\\test.xml");
+        repo = new StudentXMLStAXRepository(v,"D:\\Licenta\\C8_maven\\src\\test\\resources\\test.xml");
         students = new ArrayList<Student>();
         student1 = new Student("1", "Pop", "Vasile", "pv@yahoo.com");
         student2 = new Student("2", "Gaga", "Alex", "ga@yahoo.com");
         students.add(student1);
         students.add(student2);
         output = XMLOutputFactory.newInstance();
-        writer = output.createXMLStreamWriter(new FileWriter("D:\\Licenta\\C8\\src\\test\\repository\\write.xml"));
+        writer = output.createXMLStreamWriter(new FileWriter("D:\\Licenta\\C8_maven\\src\\test\\resources\\write.xml"));
         factory = XMLInputFactory.newInstance();
 
-        streamReader = factory.createXMLStreamReader(new FileReader("D:\\Licenta\\C8\\src\\test\\repository\\read.xml"));
-        is=new FileInputStream("D:\\Licenta\\C8\\src\\test\\repository\\read.xml");
-        is2=new FileInputStream("D:\\Licenta\\C8\\src\\test\\repository\\write.xml");
+        streamReader = factory.createXMLStreamReader(new FileReader("D:\\Licenta\\C8_maven\\src\\test\\resources\\read.xml"));
+        is=new FileInputStream("D:\\Licenta\\C8_maven\\src\\test\\resources\\read.xml");
+        is2=new FileInputStream("D:\\Licenta\\C8_maven\\src\\test\\resources\\write.xml");
 
 
 
@@ -68,7 +68,7 @@ public class StudentXMLStAXRepositoryTest {
     public void loadData() throws Exception {
         List<Student> stud=new ArrayList<Student>();
 
-        stud=repo.loadData("D:\\Licenta\\C8\\src\\test\\repository\\read.xml", stud);
+        stud=repo.loadData("D:\\Licenta\\C8_maven\\src\\test\\resources\\read.xml", stud);
         assertEquals(students.size(),stud.size());
         assertEquals(student1.getFirstName(),stud.get(0).getFirstName());
         assertEquals(student1.getLastName(),stud.get(0).getLastName());
@@ -119,7 +119,7 @@ public class StudentXMLStAXRepositoryTest {
     public void writeToFile() throws XMLStreamException {
 
         List<Student> stud= new ArrayList<Student>();
-        repo.writeToFile("D:\\Licenta\\C8\\src\\test\\repository\\write.xml", students);
+        repo.writeToFile("D:\\Licenta\\C8_maven\\src\\test\\resources\\write.xml", students);
         repo.writeToFile();
         stud=repo.readFromXML(is2);
 
