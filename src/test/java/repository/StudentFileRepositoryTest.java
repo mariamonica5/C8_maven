@@ -35,7 +35,7 @@ public class StudentFileRepositoryTest {
 
             }
         };
-        repo = new StudentFileRepository(v, "D:\\Licenta\\C8\\src\\test\\repository\\test.txt");
+        repo = new StudentFileRepository(v, "D:\\Licenta\\C8_maven\\src\\test\\resources\\test.txt");
         students = new ArrayList<Student>();
         Student student1 = new Student("bmig0003", "Monica", "Barutia", "bm@yahoo.com");
         Student student2 = new Student("nm0020", "Nemes", "Madalina", "nm@yahoo.com");
@@ -61,7 +61,7 @@ public class StudentFileRepositoryTest {
 
         List<Student> studenti = new ArrayList<Student>();
 
-            studenti = repo.loadData("D:\\Licenta\\C8_maven\\src\\test\\java\\repository\\read.txt");
+            studenti = repo.loadData("D:\\Licenta\\C8_maven\\src\\test\\resources\\read.txt");
             repo.loadData();
 
         assertEquals(students.size(),studenti.size());
@@ -72,10 +72,10 @@ public class StudentFileRepositoryTest {
 
     @Test
     public void writeToFile() throws Exception {
-        repo.writeToFile("D:\\Licenta\\C8\\src\\test\\repository\\write.txt", students);
+        repo.writeToFile("D:\\Licenta\\C8_maven\\src\\test\\resources\\write.txt", students);
 
         List<Student> studenti = new ArrayList<Student>();
-        studenti = read("D:\\Licenta\\C8\\src\\test\\repository\\write.txt");
+        studenti = read("D:\\Licenta\\C8_maven\\src\\test\\resources\\write.txt");
         assertEquals(students.size(),studenti.size());
 
         repo.writeToFile();
